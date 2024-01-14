@@ -5,7 +5,7 @@ body {
   background-size: 600% 600%;
   /*background: linear-gradient(45deg,#b4be2d,#4299c2,#3a8138);*/
   background-color: rgb(27, 26, 25);
-  font-family: 'Garamond', 'Times New Roman', serif;
+  font-family: 'Gill Sans MT';
   color: #333;
   animation: cambiar 16s ease infinite;
   color: aliceblue;
