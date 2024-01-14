@@ -92,18 +92,6 @@ body {
   position: relative;
 }
 /* INFO DE LA CARRERA NOMBRE OFERTADA */
-.infoCarreraOfertada {
-  position: relative;
-  width: 100%;
-  height: 300px; /* Ajusta la altura según sea necesario */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/Carrera/CarreraPsicologia/tercero.jpg); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
-  background-position: center; /* Centra la imagen */
-  color: white; /* Color del texto, puedes ajustarlo según tu diseño */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .infoCarreraOfertada h1 {
   margin: 0; /* Elimina el margen predeterminado del h1 */

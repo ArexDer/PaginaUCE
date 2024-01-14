@@ -4,9 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilosInicio.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css ">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css "
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Prototipo UCE</title>
+
+    <script>
+      function redireccionarA(tipo) {
+        // Define las rutas de redirección según el tipo de div
+        var rutas = {
+          N: '/Inicio/OfertaAcademica/Nivelacion.html',
+          G: 'OfertaAcademica/GradoPosgrado.html',
+          P: 'OfertaAcademica/GradoPosgrado.html'
+        };
+  
+        // Redirige a la ruta correspondiente
+        window.location.href = rutas[tipo];
+      }
+    </script>
+
+    <style>
+     .imagen {
+      background-color: #f2f2f2;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .imagen img {
+      width: 100%;
+      height: auto;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+    }
+
+    .imagen h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+      
+    </style>
   </head>
 
   <body>
@@ -17,7 +64,7 @@
           alt="Una imagen del logo de la Universaidad Central"
           src="/Inicio/Imagenes/logo.png"
         />
-        <h2 class="Universidad Central del Ecuador">
+        <h2 class="Universidad">
           Universidad Central del Ecuador
         </h2>
       </a>
@@ -27,9 +74,13 @@
           <li>
             <a href="#">Oferta Académica</a>
             <ul>
-              <li><a href="#">Nivelación</a></li>
+              <li>
+                <a href="/Inicio/OfertaAcademica/Nivelacion.html">Nivelación</a>
+              </li>
               <li><a href="OfertaAcademica/GradoPosgrado.html">Grado </a></li>
-              <li><a href="OfertaAcademica/GradoPosgrado.html">Posgrado </a></li>
+              <li>
+                <a href="OfertaAcademica/GradoPosgrado.html">Posgrado </a>
+              </li>
               <li><a href="#">Idiomas</a></li>
             </ul>
           </li>
@@ -79,64 +130,70 @@
     </header>
     <!--HACER UN SLIDER DE IMAGENES QUE SE PASEN UNA A CONTINUACION DE OTRA-->
 
-    <section class="infoUCE">
-      
-    </section>
+    
 
-
+    <section class="infoUCE"></section>
+    <hr style="border-color: red;">
     <div class="centrado">
       <h2 class="titulo">Omnnium Potentior Est Sapientia</h2>
       <p class>
-        La Universidad Central del Ecuador es la institucion de educacion superior
-        mas antigua en el pais. Cuna del desarrollo academico y la formacion
-        profecional, la Universidad se presenta como un pilas del conocimiento,
-        del desarrollo humano y la excelencia academica.
+        La Universidad Central del Ecuador es la institucion de educacion
+        superior mas antigua en el pais. Cuna del desarrollo academico y la
+        formacion profecional, la Universidad se presenta como un pilas del
+        conocimiento, del desarrollo humano y la excelencia academica.
       </p>
     </div>
+    <hr style="border-color: green;">
     <!-- CREACION DE MIS 3 PARTES NIVELACION, GRADO, POSGRADO-->
+
     <section class="seccion-imagenes">
-      <div class="N">
-       
+      <div class="N" onclick="redireccionarA('N')">
         <h1>NIVELACIÓN</h1>
-        
-      </div >
-      
-      <div class="G">
-        <a href="Oferta Academica/Facultad.html" class="boton">GRADO</a>
+      </div>
+
+      <div class="G"  onclick="redireccionarA('G')">
+       
         <h1>GRADO</h1>
-        
       </div>
 
-      <div class="P">
-        <h1>POSGRADO </h1>
+      <div class="P"  onclick="redireccionarA('P')">
+        <h1>POSGRADO</h1>
+      </div>
+    </section>
+
+    <!-- INFORMACION DE NOTICIAS -->
+    <section class="infoFacu">
+      <div class="info">
+        <h1>INFORMACIÓN DE INTERÉS</h1>
+        <p>
+          En el actual periodo académico universitario, los estudiantes,
+          docentes y personal de la Universidad Central del Ecuador se preparan
+          para realizar su derecho al voto para decidir sus nuevas autoridades
+          entre las listas participantes.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/CharlaUCE.jpg" alt="Imagen 1">
+        <img src="Imagenes/InteresUCE.jpg" alt="Imagen 2">
+        <img src="Imagenes/FacuArtes.jpg" alt="Imagen 3">
+        <img src="Imagenes/Noticias Votaciones.jpg" alt="Imagen 4">
         
       </div>
     </section>
-    
-    <section class="f"></section>
-
-    <section class="interes">
-      <div class="container">
-        <!-- Columna izquierda con una imagen -->
-        <div class="columna">
-          <img src="Imagenes/cinco.png" alt="Descripción de la imagen">
-        </div>
-    
-        <!-- Columna derecha con texto -->
-        <div class="columna">
-          <p>
-            Tu texto aquí. Puedes agregar párrafos, encabezados, listas, etc.
-          </p>
-        </div>
-      </div>
-
-
-
-    </section>
-
-    <section class="noticias"></section>
-
-    <section class="links"></section>
+    <script>
+      var currentImage = 0;
+      var images = document.querySelectorAll('.imagen img');
+      var totalImages = images.length;
+  
+      function showNextImage() {
+        images[currentImage].style.display = 'none';
+        currentImage = (currentImage + 1) % totalImages;
+        images[currentImage].style.display = 'block';
+      }
+  
+      // Cambia la imagen cada 3 segundos (ajusta según tus necesidades)
+      setInterval(showNextImage, 3000);
+    </script>
 
     <footer class="footer">
       <div class="container">
@@ -158,9 +215,11 @@
         <div class="columna">
           <h4>Síguenos</h4>
           <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/lacentralec/?fref=nf"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/laucentralec/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/lacentralec"><i class="fab fa-linkedin"></i></a>
+            <a href=" https://www.youtube.com/channel/UCBg2ksNwht164otsChyMhRA"><i class="fab fa-youtube"></i></a>
+           
           </div>
         </div>
       </div>

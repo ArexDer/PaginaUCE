@@ -1,354 +1,354 @@
 * {
-    list-style: none;
-    box-sizing: border-box;
-  }
+  list-style: none;
+  box-sizing: border-box;
+}
 
 
 body {
-    height: 145vh;
-    position: relative;
-    background-color: #fffefe;
-    /*background: linear-gradient(45deg,#b4be2d,#4299c2,#3a8138);*/
-   /* background-color: rgb(250, 249, 248);*/
-    font-family: 'Garamond', 'Times New Roman', serif;
-    color: #333;
-    animation: cambiar 16s ease infinite;
+  height: 145vh;
+  position: relative;
+  background-color: #fffefe;
+  /*background: linear-gradient(45deg,#b4be2d,#4299c2,#3a8138);*/
+ /* background-color: rgb(250, 249, 248);*/
+  font-family: 'Garamond', 'Times New Roman', serif;
+  color: #333;
+  animation: cambiar 16s ease infinite;
 }
 
 #Header {
-    background-color: rgb(8, 71, 113);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(8, 71, 113);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-     /* Puedes ajustar el color de fondo según tu diseño */
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+   /* Puedes ajustar el color de fondo según tu diseño */
+  z-index: 1000;
+}
 
 .logo {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
 
 .logo img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-  }
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
 
 .navigation {
-    display: flex;
-  }
+  display: flex;
+}
 
 .navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
-  .navigation li {
-    margin-right: 20px;
-    position: relative;
-  }
+.navigation li {
+  margin-right: 20px;
+  position: relative;
+}
 
-  .navigation a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-    display: block;
-    padding: 10px;
-  }
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  display: block;
+  padding: 10px;
+}
 
-  .navigation a:hover {
-    color: #FFDD00;
-  }
+.navigation a:hover {
+  color: #FFDD00;
+}
 
-  .navigation ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    border-radius: 0 0 5px 5px;
-  }
+.navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+}
 
-  .navigation ul li:hover > ul {
-    display: inherit;
-  }
-  
-  .navigation ul ul li {
-    width: 200px;
-    float: none;
-    display: list-item;
-    position: relative;
-  }
-  /* Estilos para la Sección de Información de la Facultad */
-  .infoFacu {
-    display: grid;
-    height: 32%; /*Aqui muevo la distancia hacia abajo para separar de mi otra seccion o divs a continuacion*/
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
-    /*gap: 10px;  Separacion de mis dos columnas */
-    gap: 5px;
-    padding: 5px;
-      
-  }
-  
-  .info {
-    /* No es necesario agregar estilos específicos para .info */
-    background-color: #f2f2f2;
-    flex: 1;  
-    /*  border: 2px solid #333; */
-  }
+.navigation ul li:hover > ul {
+  display: inherit;
+}
+
+.navigation ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+/* Estilos para la Sección de Información de la Facultad */
+.infoFacu {
+  display: grid;
+  height: 32%; /*Aqui muevo la distancia hacia abajo para separar de mi otra seccion o divs a continuacion*/
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  /*gap: 10px;  Separacion de mis dos columnas */
+  gap: 5px;
+  padding: 5px;
+    
+}
+
+.info {
+  /* No es necesario agregar estilos específicos para .info */
+  background-color: #f2f2f2;
+  flex: 1;  
+  /*  border: 2px solid #333; */
+}
 h1{
-    margin-left: 10px;
-    justify-content: center;
-    margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  margin-right: 10px;
 }
 p{
-    margin-left: 10px;
-    justify-content: center;
-    margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  margin-right: 10px;
 }
-  
+
 .imagen h1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 1; /* Con este le muevo mas arriba y no pegado a la parte inferior*/
-    padding: 30px; /* Ajusta según tus necesidades el ancho del borde del texto */
-    background-color: rgba(8, 71, 113, 0.80); /* Fondo semi-transparente para mejorar la legibilidad del texto */
-    /*  background-color: rgba(39, 8, 90, 0.7); CON el 0.7 es la opacidad del color*/
-    color: white;
-  }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1; /* Con este le muevo mas arriba y no pegado a la parte inferior*/
+  padding: 30px; /* Ajusta según tus necesidades el ancho del borde del texto */
+  background-color: rgba(8, 71, 113, 0.80); /* Fondo semi-transparente para mejorar la legibilidad del texto */
+  /*  background-color: rgba(39, 8, 90, 0.7); CON el 0.7 es la opacidad del color*/
+  color: white;
+}
 /* Estilos generales para la sección de GRADO, POSGRADO, ANEXOS */
 
 .grado {
-    text-align: center;
-    padding: 20px;
-  }
-  
-.grado-Titulo {
-    color: rgb(5, 5, 5);
-  }
-
-  .seccion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  }
-
-  .modulo {
-    flex: 1 0 calc(33.33% - 2px);
-    margin: 10px;
-    height: 80px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-  }
-
-  .boton {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-  .boton:hover {
-    background-color: #2980b9;
-  }
-
-/* -------------------------*/ 
-hr{
-    border: 1px solid #ccc; /* Estilo de la línea de separación */
-    margin: 20px 0; /* Espaciado superior e inferior de la línea de separación */
-  }
-
-/* Estilos generales para la sección de GRADO, POSGRADO, ANEXOS */
-.posgrado {
-    text-align: center;
-    padding: 20px;
-  }
-  
-.posgrado-Titulo {
-    color: rgb(5, 5, 5);
-  }
-  
-  /* Estilos para la galería de imágenes */
-  .galeria {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .box-galery {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Estilos para hacer que las imágenes sean botones */
-  .box-img {
-    overflow: hidden;
-    position: relative;
-    border: 2px solid #333;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
-    transition: border-color 0.3s ease-in-out;
-  }
-  
-  .box-img:hover {
-    border-color: #ec9209; /* Cambia el color del borde al pasar el ratón sobre la imagen */
-  }
-  
-  .box-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /*  --------------------------- */
-.anexos {
-    text-align: center;
-    padding: 20px;
-  }
-  
-.anexos-Titulo {
-    color: rgb(5, 5, 5);
-  }
-  
-  /* Estilos para la galería de imágenes */
-  .galeria {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .box-galery {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Estilos para hacer que las imágenes sean botones */
-  .box-img {
-    overflow: hidden;
-    position: relative;
-    border: 2px solid #333;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
-    transition: border-color 0.3s ease-in-out;
-  }
-  
-  .box-img:hover {
-    border-color: #ff9900; /* Cambia el color del borde al pasar el ratón sobre la imagen */
-  }
-  
-  .box-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /*----------------------------------------- */
-
-
-  /* ---------------------otro tipo de anexos */
-  .informacionFacultad {
-    display: grid;
-    height: 32%; /*Aqui muevo la distancia hacia abajo para separar de mi otra seccion o divs a continuacion*/
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    /*gap: 10px;  Separacion de mis dos columnas */
-    gap: 5px;
-    padding: 30px; /*AJUSTO TODOS LOS LADOS PARA UNA MEJOR VISION DEL CONTENIDO*/
-
-  }
-  
-  .datoInfo1,
-  .datoInfo2,
-  .datoInfo3 {
-    color: white;
-    text-align: center;
-    background-color:#808183;
-    flex: 1;  
-    border: 3px solid #4e3bb9;
-    
-  }
-  .datoInfo1 h1,
-  
-  .datoInfo2 h1,
-  
-  .datoInfo3 h1
-   {
-    font-size: 18px; /* Puedes ajustar el tamaño del texto según tus necesidades */
-  }
-
-  .datoInfo1 h2,
-  
-  .datoInfo2 h2,
-  
-  .datoInfo3 h2
-   {
-    font-size: 15px; /* Puedes ajustar el tamaño del texto según tus necesidades */
-  }
-
-
-  /* ---------------------------------------------------------- */
-.footer {
-  background-color:rgb(8, 71, 113);
-  color: #fff;
+  text-align: center;
   padding: 20px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.grado-Titulo {
+  color: rgb(5, 5, 5);
+}
+
+.seccion {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.modulo {
+  flex: 1 0 calc(33.33% - 2px);
+  margin: 10px;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.boton {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #2980b9;
+}
+
+/* -------------------------*/ 
+hr{
+  border: 1px solid #ccc; /* Estilo de la línea de separación */
+  margin: 20px 0; /* Espaciado superior e inferior de la línea de separación */
+}
+
+/* Estilos generales para la sección de GRADO, POSGRADO, ANEXOS */
+.posgrado {
+  text-align: center;
+  padding: 20px;
+}
+
+.posgrado-Titulo {
+  color: rgb(5, 5, 5);
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.box-galery {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para hacer que las imágenes sean botones */
+.box-img {
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  border-color: #ec9209; /* Cambia el color del borde al pasar el ratón sobre la imagen */
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*  --------------------------- */
+.anexos {
+  text-align: center;
+  padding: 20px;
+}
+
+.anexos-Titulo {
+  color: rgb(5, 5, 5);
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.box-galery {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para hacer que las imágenes sean botones */
+.box-img {
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  border-color: #ff9900; /* Cambia el color del borde al pasar el ratón sobre la imagen */
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*----------------------------------------- */
+
+
+/* ---------------------otro tipo de anexos */
+.informacionFacultad {
+  display: grid;
+  height: 38%; /*Aqui muevo la distancia hacia abajo para separar de mi otra seccion o divs a continuacion*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  /*gap: 10px;  Separacion de mis dos columnas */
+  gap: 5px;
+  padding: 30px; /*AJUSTO TODOS LOS LADOS PARA UNA MEJOR VISION DEL CONTENIDO*/
+
+}
+
+.datoInfo1,
+.datoInfo2,
+.datoInfo3 {
+  color: white;
+  text-align: center;
+  background-color:#808183;
+  flex: 1;  
+  border: 3px solid #4e3bb9;
+  
+}
+.datoInfo1 h1,
+
+.datoInfo2 h1,
+
+.datoInfo3 h1
+ {
+  font-size: 18px; /* Puedes ajustar el tamaño del texto según tus necesidades */
+}
+
+.datoInfo1 h2,
+
+.datoInfo2 h2,
+
+.datoInfo3 h2
+ {
+  font-size: 15px; /* Puedes ajustar el tamaño del texto según tus necesidades */
+}
+
+
+/* ---------------------------------------------------------- */
+.footer {
+background-color:rgb(8, 71, 113);
+color: #fff;
+padding: 20px;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
 }
 
 .columna {
-  flex: 1;
-  max-width: 300px;
-  padding: 0 10px;
+flex: 1;
+max-width: 300px;
+padding: 0 10px;
 }
 
 .columna img {
-  width: 170px;
-  height: 170px;
-  margin-right: 10px;
+width: 170px;
+height: 170px;
+margin-right: 10px;
 }
 
 h4 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid #00c3ff;
+margin-bottom: 10px;
+border-bottom: 2px solid #00c3ff;
 }
 
 .columna ul li {
-  margin-bottom: 10px; /* Espaciado de 10px entre elementos de la lista */
+margin-bottom: 10px; /* Espaciado de 10px entre elementos de la lista */
 }
 ul {
-  list-style: none;
-  
-  padding: 0;
+list-style: none;
+
+padding: 0;
 }
 
 .social a {
-  color: #fff;
-  margin-right: 10px;
-  
+color: #fff;
+margin-right: 10px;
+
 }

@@ -4,9 +4,9 @@ body {
  /* background: linear-gradient(45deg,#C02126,#3F90CE,#009036);*/
   background-size: 600% 600%;
   /*background: linear-gradient(45deg,#b4be2d,#4299c2,#3a8138);*/
-  background-color: rgb(27, 26, 25);
+  background-color: rgb(255, 255, 255);
   font-family: 'Garamond', 'Times New Roman', serif;
-  color: #333;
+  color: #ffd5d5;
   animation: cambiar 16s ease infinite;
   color: aliceblue;
 }
@@ -24,7 +24,9 @@ body {
    /* Puedes ajustar el color de fondo según tu diseño */
   z-index: 1000;
 }
-
+.Universidad{
+  color: #fff;
+}
 .logo {
   text-decoration: none;
   color: white;
@@ -95,20 +97,24 @@ a {
 .fotoUce {
   width: auto;
   height: 420px;
-  background-color: yellowgreen;
+  background-color: rgb(119, 10, 37);
   overflow: hidden; /* Para ocultar el exceso de imagen si es necesario */
 }
+
+
 .infoUCE {
   position: relative;
   width: 100%;
-  height: 400px; /* Ajusta la altura según sea necesario */
-  background-image: url(/Inicio/Imagenes/siete.jpg); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+  
+  height: 500px; /* Ajusta la altura según sea necesario */
+  background-image: url(Imagenes/UCE_INICIO.jpg); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
   background-position: center; /* Centra la imagen */
-  color: white; /* Color del texto, puedes ajustarlo según tu diseño */
+  color: rgb(138, 30, 30); /* Color del texto, puedes ajustarlo según tu diseño */
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
 
 .centrado{
@@ -124,7 +130,7 @@ a {
   gap: 20px; /* Espaciado entre las imágenes (ajusta según sea necesario) */
   
   width: auto;  /* AJUSTO EL TAMANIO EN VERTICAL DE MI S4ECCION, EN ESTE CASO SE AJUSTA A LA IMG */
-  background-color: #13120c;
+  background-color: rgb(8, 71, 113);
 
 }
 
@@ -158,6 +164,7 @@ a {
   transition: border-color 0.3s ease-in-out;
   color:rgb(249, 250, 250);
 }
+
 
 
 .seccion-imagenes .P{
@@ -222,42 +229,84 @@ a {
   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
-.interes{
-  
-  height: 500px;
-  background-color: #f0eeeb;
-  margin-bottom: 20px;
-}
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  overflow: hidden;
+.info {
+  /* No es necesario agregar estilos específicos para .info */
+  background-color: #bb3636;
+  flex: 1;  
+  /*  border: 2px solid #333; */
 }
 
-.columna {
-  float: left;
-  width: 50%;
-  padding: 10px;
+.centrado{
+  background-color: #fff;
 }
-.columna p{
-  color: rgb(2, 2, 2);
+h2{
+  margin-left: 10px;
+  justify-content: center;
+  margin-right: 10px;
+  color: #13120c;
 }
-
-
-
-.columna img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+p{
+  margin-left: 10px;
+  justify-content: center;
+  margin-right: 10px;
+  color: #13120c;
 }
 
-.footer{
-  background-color: #00c3ff;
+.imagen h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1; /* Con este le muevo mas arriba y no pegado a la parte inferior*/
+  padding: 30px; /* Ajusta según tus necesidades el ancho del borde del texto */
+  background-color: rgba(8, 71, 113, 0.80); /* Fondo semi-transparente para mejorar la legibilidad del texto */
+  /*  background-color: rgba(39, 8, 90, 0.7); CON el 0.7 es la opacidad del color*/
+  color: white;
 }
 
+.infoFacu {
+  display: grid;
+  height: 32%; /*Aqui muevo la distancia hacia abajo para separar de mi otra seccion o divs a continuacion*/
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  /*gap: 10px;  Separacion de mis dos columnas */
+  gap: 5px;
+  padding: 5px;
+  color: #13120c;
+    
+}
 
-.footer {
+.info {
+  /* No es necesario agregar estilos específicos para .info */
+  background-color: #ffffff;
+  flex: 1;  
+  /*  border: 2px solid #333; */
+}
+h1{
+  text-align: center;
+  margin-left: 20px;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 8%;
+}
+p{
+  margin-left: 10px;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.imagen h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1; /* Con este le muevo mas arriba y no pegado a la parte inferior*/
+  padding: 30px; /* Ajusta según tus necesidades el ancho del borde del texto */
+  background-color: rgba(8, 71, 113, 0.80); /* Fondo semi-transparente para mejorar la legibilidad del texto */
+  /*  background-color: rgba(39, 8, 90, 0.7); CON el 0.7 es la opacidad del color*/
+  color: rgb(15, 11, 11);
+}
+/* ///////////////////////////////////  */
+ /* ---------------------------------------------------------- */
+ .footer {
   background-color:rgb(8, 71, 113);
   color: #fff;
   padding: 20px;
