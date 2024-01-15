@@ -108,36 +108,105 @@ body {
 
 
 /* MALLA, DOCENTES, SERVICIO */
+/* MATERIAS OFERTADA DE IDIOMAS*/
 .datosCarrera {
-   
-    width: 100%;
-    height: 7%;
-    
-  }
+  width: 100%;
+  height: 10%;
+ 
+}
+
 .barnav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-  }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menuD {
-    width: 30%;
-    height: 100%;
-    background-color: rgb(34, 32, 32);
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1px;
-  }
+  width: calc(30% - 2px);
+  height: 58%;
+  background-color: #2b1a1b;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .menuD:hover {
-    background-color: rgb(190, 181, 181);
-    color: rgb(8, 8, 8);
-    transition: 0.5s;
+  background-color: #0076BD;
+  color: rgb(8, 8, 8);
+  transition: 0.5s;
+}
+
+.popup {
+  position: fixed;
+  height: 540px;
+  width: 980px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #0076BD;
+  border-radius: 5px;
+  z-index: 1000;
+  display: none;
+}
+
+.popup h1 {
+ text-align: center;
+ 
+ margin-bottom: 10px; /* Añade un margen inferior para separar del resto del contenido */
+}
+.popup h3 {
+  text-align: center;
+  
+ }
+ .popup h5 {
+  text-align: center;
+  
+ }
+
+
+.popupContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popupColumn1 {
+  width: 60%; /* Ajusta el ancho de la primera columna según sea necesario */
+  padding: 10px; /* Ajusta el espacio interno según sea necesario */
+}
+
+.popupColumn2 {
+  width: 40%; /* Ajusta el ancho de la segunda columna según sea necesario */
+  padding: 10px; /* Ajusta el espacio interno según sea necesario */
+}
+
+.popupImage {
+  width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+  border-radius: 5px; /* Añade bordes redondeados a la imagen */
+}
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.mostrarPopupServicios {
+  h1, a {
+    display: inline-block;
   }
+}
+
+
+
   /* -------------------INFORMACION DE LA CARRERA --------*/
   .informacion {
     display: grid;
