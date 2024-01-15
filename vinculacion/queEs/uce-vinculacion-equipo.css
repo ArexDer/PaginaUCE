@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: Gill Sans Mt, sans-serif;
+    font-weight: bold;
+   
+  }
+  
+  header {
+    background-color: #084771;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  #logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  #logo img {
+    max-width: 100px; 
+    height: auto;
+  }
+  
+  #logo h3 {
+    font-size: 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #logo span {
+    white-space: nowrap; 
+  }
+  
+  nav {
+    display: flex;
+    z-index: 10;
+   
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative;
+  
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:lighter;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000; /* Borde alrededor del menú desplegable */
+    min-width: 200px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Cambiado a 'block' en lugar de 'inherit' */
+  }
+  
+  nav ul ul li {
+    width: 100%; /* O el ancho que prefieras */
+    white-space: nowrap;
+    padding: 8px 15px; /* Espaciado interior para cada opción del menú */
+    margin: 0; /* Añadido para eliminar cualquier margen */
+    padding: 0; /* Añadido para eliminar cualquier relleno */
+    border-bottom: 1px solid #000000; /* Borde entre opciones del menú */
+  }
+  
+  nav ul ul li a {
+    color: #000000; /* Cambia el color del texto dentro del menú desplegable */
+    text-decoration: none;
+  }
+  
+  nav ul ul li a:hover {
+    text-decoration: dashed; /* Efecto de subrayado al pasar el ratón */
+    color: #AD9218;
+    background-color:#000000;
+  }
+  
+  nav ul li a.hovered {
+    text-decoration: underline;
+    color: #AD9218;
+  }
+  
+  #buttons {
+    display: flex;
+    margin-bottom: 80px;
+  }
+  
+  #buttons button {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #buttons button:hover{
+    text-decoration: underline;
+    color: #AD9218;
+  }
+
+/*--------------------------------------------------------------*/
+.banner {
+    background-image: url('/InicioUCE/vinculacion/queEs.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido en la parte inferior del banner */
+    align-items: center;
+    position: relative;
+}
+
+.title-box {
+    background-color: #ad92189f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 200px; /* Ajusta según sea necesario para el espaciado entre el título y la barra de navegación */
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.navigation {
+    background-color: #084771;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0; /* Añade un poco de espacio interno en la barra de navegación */
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Añade esta línea */
+    box-sizing: border-box; /* Añade esta línea para incluir el padding en el ancho total */
+}
+
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+
+.navigation a:hover {
+    background-color: #555;
+}
+
+/* Agrega un borde inferior a los elementos de la barra de navegación */
+.navigation li {
+    border-bottom: 2px solid transparent;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: #555;
+    border-bottom: 2px solid #fff; /* Cambia el color del borde inferior al hacer hover o si está activo */
+}
+/*-----------------------------------------------------------Coordinadores-------------------------------------------------------*/
+#coordinadores {
+  background-color: #808183;
+  padding: 20px;
+  text-align: center;
+}
+
+#coordinadores h2 {
+  color: #fff; /* Color del texto en blanco para mayor contraste */
+  font-size: 2.5em;
+}
+
+.coordinador {
+  display: inline-block; /* Para que estén en línea y se ajusten a dos columnas */
+  width: 45%; /* Ajusta el ancho para que haya dos columnas con espacio entre ellas */
+  margin: 1%; /* Agrega un pequeño margen entre los coordinadores */
+  background-color: #fff; /* Fondo blanco para cada coordinador */
+  border-radius: 10px; /* Esquinas redondeadas */
+  overflow: hidden; /* Asegura que el fondo color #808183 no se aplique a cada coordinador */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+}
+
+.imagen-marco {
+  border-radius: 50%; /* Marco redondo para la imagen */
+  overflow: hidden;
+  margin: 10px auto; /* Espaciado entre la imagen y la información del coordinador */
+  width: 100px; /* Ajusta el tamaño del marco redondo según tus preferencias */
+  height: 100px; /* Ajusta el tamaño del marco redondo según tus preferencias */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-marco img {
+  width: 100px; /* Ajusta el ancho de la imagen al 100% del marco redondo */
+  height: auto; /* Ajusta la altura de la imagen automáticamente */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+  border: 5px solid #808183; /* Bordes del marco redondo */
+}
+
+
+.info-coordinador {
+  padding: 10px;
+}
+
+.info-coordinador p {
+  color: #808183; /* Color del texto en #808183 para mayor contraste */
+}
+
+.info-coordinador a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #3F90CE; /* Color de fondo del enlace */
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+
+
+
+  /* Estilos para el contenido principal (añade más estilos según sea necesario) */
+  main {
+    padding: 20px;
+  }
+  
+  /* Estilos para los enlaces en el contenido principal */
+  main a {
+    color: #007BFF;
+    text-decoration: underline;
+  }
