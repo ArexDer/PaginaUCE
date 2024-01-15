@@ -401,12 +401,23 @@ ul {
 }
 
 .cuadroTitulos {
+  position: absolute;
   background-color: rgb(8, 71, 113); /* Color de fondo azul */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: right;
   color: white; /* Color de texto blanco */
   padding: 20px; /* Espaciado interno de 20 píxeles */
   font-weight: bold;
-  font-size: 25px;
+  width: 700px; /* Ancho del cuadro de texto */
+  height: 150px; /* Altura del cuadro de texto */
+  margin: 10px auto; 
+  font-size: 40px;
+  margin-top: -40px;
+  right: 0;
+  top: 490px;
 }
 
 .columnas {
