@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css ">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Dirección de doctorados e investigación</title>
+
+    <script>
+      function redireccionarA(parametro) {
+        var panel = document.getElementById('miPanel');
+
+        // Verifica si el panel está oculto
+        if(panel.style.display === 'none') {
+            // Si está oculto, muéstralo
+            panel.style.display = 'block';
+        } else {
+            // Si no está oculto, ocúltalo
+            panel.style.display = 'none';
+        }
+      }
+      function redireccionarB(parametro) {
+        var panel = document.getElementById('miPanel2');
+
+        // Verifica si el panel está oculto
+        if(panel.style.display === 'none') {
+            // Si está oculto, muéstralo
+            panel.style.display = 'block';
+        } else {
+            // Si no está oculto, ocúltalo
+            panel.style.display = 'none';
+        }
+      }
+      function redireccionarC(parametro) {
+        var panel = document.getElementById('miPanel3');
+
+        // Verifica si el panel está oculto
+        if(panel.style.display === 'none') {
+            // Si está oculto, muéstralo
+            panel.style.display = 'block';
+        } else {
+            // Si no está oculto, ocúltalo
+            panel.style.display = 'none';
+        }
+      }
+
+    </script>
   </head>
 
   <body>
@@ -134,16 +174,59 @@
 
     <section class="columnas">
       <div class="N" onclick="redireccionarA('N')">
+        
         <h1 >DOCTORADOS Y MAESTRÍAS CON ÉNFASIS EN INVESTIGACIÓN</h1>
+        <div id="miPanel" style="display: none;">
+          <button id="cerrarPanel">X</button>
+          <h1>Dirección de Doctorados e Innovación</h1>
+          <img src="/Investigacion/Imagenes/DireccionDoctorados/DD4.png" alt="img"> 
+          <h3>La  es la encargada de promover, coordinar y supervisar los programas de Doctorado de la Universidad Central del Ecuador.
+            La Universidad Central del Ecuador se encuentra en proceso de formulación de Doctorados en las áreas de:
+            Ciencias Agrícolas
+            Jurisprudencia
+            Artes
+            Actualmente la UCE cuenta con los siguientes programas de Maestría con Trayectoria en Investigación:
+          </h3>  
+          <a href="https://www.uce.edu.ec/web/posgrado" target="_blank">https://www.uce.edu.ec/web/posgrado</a>  https://www.uce.edu.ec/web/posgrado
+          
+        </div>
       </div>
 
-      <div class="G"  onclick="redireccionarA('G')">
-       
+      <div class="G"  onclick="redireccionarB('G')">     
         <h2>INNOVACIÓN Y PROPIEDAD INTELECTUAL UCE</h2>
+        <div id="miPanel2" style="display: none;">
+          <button id="cerrarPanel">X</button>
+          <p>
+            La Dirección de Doctorados e Innovación tiene como una de sus funciones el 
+            organizar y apoyar a la gestión de patentes e invenciones desarrolladas por los 
+            miembros de la comunidad universitaria.
+            <br>
+            Si has identificado algún intangible susceptible de protección intelectual 
+            o tienes alguna duda sobre propiedad intelectual puedes contactarte a: 
+            <br/>
+            
+            ddei@uce.edu.ec
+          </p>
+        </div>
       </div>
 
-      <div class="P"  onclick="redireccionarA('P')">
+      <div class="P"  onclick="redireccionarC('P')">
         <h1>SEGUIMIENTO PHD DEVEGAMIENTO</h1>
+        <div id="miPanel3">
+          <button id="cerrarPanel">Cerrar</button>
+          <p>
+            La Dirección de Doctorados e Innovación es la responsable del seguimiento 
+            del periodo de devengamiento para los profesores titulares que culminaron 
+            programas de doctorado con el apoyo de la Universidad Central del Ecuador
+            <br/>
+            Responsable de la Unidad de Devengamiento: 
+            <br/>
+            Arq. María Belén Granja, PhD
+            <br/>
+            correo: 
+            <br/>seguimiento.devengantes@uce.edu.ec
+          </p>
+        </div>
       </div>
     </section>
 

@@ -7,4 +7,10 @@ document.getElementById("miBoton").addEventListener("click", function(){
     }
  });
 
+ document.getElementById('cerrarPanel').addEventListener('click', function() {
+    var panel = document.getElementById('miPanel');
+    panel.style.display = 'none';
+  });
+  
+
  

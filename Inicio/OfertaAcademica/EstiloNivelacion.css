@@ -1,0 +1,253 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 145vh;
+  position: relative;
+  background-color: #fffefe;
+  /*background: linear-gradient(45deg,#b4be2d,#4299c2,#3a8138);*/
+  /* background-color: rgb(250, 249, 248);*/
+  font-family: "Garamond", "Times New Roman", serif;
+  color: #333;
+  animation: cambiar 16s ease infinite;
+}
+
+#Header {
+  background-color: rgb(8, 71, 113);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Puedes ajustar el color de fondo según tu diseño */
+  z-index: 1000;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  display: block;
+  padding: 10px;
+}
+
+.navigation a:hover {
+  color: #ffdd00;
+}
+
+.navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+}
+
+.navigation ul li:hover > ul {
+  display: inherit;
+}
+
+.navigation ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.centrado {
+  text-align: center;
+  color: #050505;
+}
+
+.informacion {
+  display: grid;
+  width: auto;
+  /*Aqui muevo la distancia hacia abajo para separar de mi otra seccion o divs a continuacion*/
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  /*gap: 10px;  Separacion de mis dos columnas */
+  gap: 9px;
+  padding: 2px; /*es centrar en todas las direcciones al centro*/
+}
+
+.info {
+  /* No es necesario agregar estilos específicos para .info */
+  background-color: #dbdbdb;
+  flex: 1;
+
+  /*border: 2px solid #333; */
+}
+h1 {
+  margin-left: 10px;
+  justify-content: center;
+  margin-right: 10px;
+}
+p {
+  margin-left: 20px;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.seccion-imagenes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.A .boton {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.C .boton {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.F .boton {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.boton:hover {
+  background-color: #ffdd00;
+  color: #050505;
+}
+
+/* Estilos del popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 100%;
+  max-height: 100%;
+  width: 75%; /* Aumenta un 25% el ancho */
+  height: 80%; /* Reduce un 20% la altura */
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: block;
+}
+
+/* Estilo del botón de cerrar */
+#cerrarPopup {
+  cursor: pointer;
+  color: #3498db; /* Color azul agradable */
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto; /* Espaciado automático en la parte superior */
+  margin-bottom: 10px; /* Espaciado en la parte inferior */
+  transition: color 0.3s ease;
+}
+
+#cerrarPopup:hover {
+  color: #21618c; /* Cambia el color al hacer hover */
+}
+
+/* ---------------------------------------------------------- */
+.footer {
+  background-color: rgb(8, 71, 113);
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna {
+  flex: 1;
+  max-width: 300px;
+  padding: 0 10px;
+}
+
+.columna img {
+  width: 170px;
+  height: 170px;
+  margin-right: 10px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00c3ff;
+}
+
+.columna ul li {
+  margin-bottom: 10px; /* Espaciado de 10px entre elementos de la lista */
+}
+ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+.social a {
+  color: #fff;
+  margin-right: 10px;
+}
