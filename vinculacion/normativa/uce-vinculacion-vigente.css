@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: Gill Sans Mt, sans-serif;
+    font-weight: bold;
+   
+  }
+  
+  header {
+    background-color: #084771;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  #logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  #logo img {
+    max-width: 100px; 
+    height: auto;
+  }
+  
+  #logo h3 {
+    font-size: 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #logo span {
+    white-space: nowrap; 
+  }
+  
+  nav {
+    display: flex;
+    z-index: 10;
+   
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative;
+  
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:lighter;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000; /* Borde alrededor del menú desplegable */
+    min-width: 200px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Cambiado a 'block' en lugar de 'inherit' */
+  }
+  
+  nav ul ul li {
+    width: 100%; /* O el ancho que prefieras */
+    white-space: nowrap;
+    padding: 8px 15px; /* Espaciado interior para cada opción del menú */
+    margin: 0; /* Añadido para eliminar cualquier margen */
+    padding: 0; /* Añadido para eliminar cualquier relleno */
+    border-bottom: 1px solid #000000; /* Borde entre opciones del menú */
+  }
+  
+  nav ul ul li a {
+    color: #000000; /* Cambia el color del texto dentro del menú desplegable */
+    text-decoration: none;
+  }
+  
+  nav ul ul li a:hover {
+    text-decoration: dashed; /* Efecto de subrayado al pasar el ratón */
+    color: #AD9218;
+    background-color:#000000;
+  }
+  
+  nav ul li a.hovered {
+    text-decoration: underline;
+    color: #AD9218;
+  }
+  
+  #buttons {
+    display: flex;
+    margin-bottom: 80px;
+  }
+  
+  #buttons button {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #buttons button:hover{
+    text-decoration: underline;
+    color: #AD9218;
+  }
+
+/*--------------------------------------------------------------*/
+.banner {
+    background-image: url('/InicioUCE/vinculacion/queEs.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido en la parte inferior del banner */
+    align-items: center;
+    position: relative;
+}
+
+.title-box {
+    background-color: #ad92189f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 200px; /* Ajusta según sea necesario para el espaciado entre el título y la barra de navegación */
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.navigation {
+    background-color: #084771;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0; /* Añade un poco de espacio interno en la barra de navegación */
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Añade esta línea */
+    box-sizing: border-box; /* Añade esta línea para incluir el padding en el ancho total */
+}
+
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+
+.navigation a:hover {
+    background-color: #555;
+}
+
+/* Agrega un borde inferior a los elementos de la barra de navegación */
+.navigation li {
+    border-bottom: 2px solid transparent;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: #555;
+    border-bottom: 2px solid #fff; /* Cambia el color del borde inferior al hacer hover o si está activo */
+}
+
+/*-----------------------------------------titulo----------------------------------------------*/
+.content-section {
+    max-width: 800px; /* Establece un ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Ajusta según sea necesario */
+}
+
+/* Estilos para los títulos dentro de la sección de contenido */
+.content-section h2 {
+    font-weight: bold;
+    text-align: center; /* Alinea los títulos a la izquierda */
+}
+/*-----------------------------------------tabla----------------------------------------------*/
+
+  table {
+    width: 50%; /* Ajusta el ancho de la tabla según tus necesidades */
+    margin: auto; /* Centra la tabla en la página */
+    margin-top: 20px; /* Agrega un margen superior para separar la tabla de la barra de navegación */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff; /* Agrega una línea a la derecha de cada celda */
+  }
+  
+  th {
+    background-color: #808183;
+    color: #fff;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #54AEE2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #3F90CE;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /* Estilos para el contenido principal (añade más estilos según sea necesario) */
+  main {
+    padding: 20px;
+  }
+  
+  /* Estilos para los enlaces en el contenido principal */
+  main a {
+    color: #007BFF;
+    text-decoration: underline;
+  }

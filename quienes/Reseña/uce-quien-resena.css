@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Gill Sans Mt, sans-serif;
+    font-weight: bold;
+   
+  }
+  
+  header {
+    background-color: #084771;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  #logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  #logo img {
+    max-width: 100px; 
+    height: auto;
+  }
+  
+  #logo h3 {
+    font-size: 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #logo span {
+    white-space: nowrap; 
+  }
+  
+  nav {
+    display: flex;
+    z-index: 10;
+   
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative;
+  
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:lighter;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000; /* Borde alrededor del menú desplegable */
+    min-width: 200px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Cambiado a 'block' en lugar de 'inherit' */
+  }
+  
+  nav ul ul li {
+    width: 100%; /* O el ancho que prefieras */
+    white-space: nowrap;
+    padding: 8px 15px; /* Espaciado interior para cada opción del menú */
+    margin: 0; /* Añadido para eliminar cualquier margen */
+    padding: 0; /* Añadido para eliminar cualquier relleno */
+    border-bottom: 1px solid #000000; /* Borde entre opciones del menú */
+  }
+  
+  nav ul ul li a {
+    color: #000000; /* Cambia el color del texto dentro del menú desplegable */
+    text-decoration: none;
+  }
+  
+  nav ul ul li a:hover {
+    text-decoration: dashed; /* Efecto de subrayado al pasar el ratón */
+    color: #AD9218;
+    background-color:#000000;
+  }
+  
+  nav ul li a.hovered {
+    text-decoration: underline;
+    color: #AD9218;
+  }
+  
+  #buttons {
+    display: flex;
+    margin-bottom: 80px;
+  }
+  
+  #buttons button {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #buttons button:hover{
+    text-decoration: underline;
+    color: #AD9218;
+  }
+  /*-------------------------------------------------------------Fin de la cabezera-----------------------------------------------------------------------------*/
+  #banner {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: auto; /* Añade esta línea para centrar horizontalmente */
+}
+
+.slider {
+    width: 65%; /* Ajusta el ancho del carrusel según tus necesidades */
+    height: auto; /* Ajusta la altura según tus necesidades o usa un valor específico en píxeles */
+    margin: 0 auto; /* Añade esta línea para centrar horizontalmente */
+}
+
+.slider img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+}
