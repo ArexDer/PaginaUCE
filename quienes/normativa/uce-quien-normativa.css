@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    font-family: Gill Sans Mt, sans-serif;
+    font-weight: bold;
+   
+  }
+  
+  header {
+    background-color: #084771;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  #logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  #logo img {
+    max-width: 100px; 
+    height: auto;
+  }
+  
+  #logo h3 {
+    font-size: 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #logo span {
+    white-space: nowrap; 
+  }
+  
+  nav {
+    display: flex;
+    z-index: 10;
+   
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative;
+  
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:lighter;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000; /* Borde alrededor del menú desplegable */
+    min-width: 200px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  
+  nav ul li:hover > ul {
+    display: block; /* Cambiado a 'block' en lugar de 'inherit' */
+  }
+  
+  nav ul ul li {
+    width: 100%; /* O el ancho que prefieras */
+    white-space: nowrap;
+    padding: 8px 15px; /* Espaciado interior para cada opción del menú */
+    margin: 0; /* Añadido para eliminar cualquier margen */
+    padding: 0; /* Añadido para eliminar cualquier relleno */
+    border-bottom: 1px solid #000000; /* Borde entre opciones del menú */
+  }
+  
+  nav ul ul li a {
+    color: #000000; /* Cambia el color del texto dentro del menú desplegable */
+    text-decoration: none;
+  }
+  
+  nav ul ul li a:hover {
+    text-decoration: dashed; /* Efecto de subrayado al pasar el ratón */
+    color: #AD9218;
+    background-color:#000000;
+  }
+  
+  nav ul li a.hovered {
+    text-decoration: underline;
+    color: #AD9218;
+  }
+  
+  #buttons {
+    display: flex;
+    margin-bottom: 80px;
+  }
+  
+  #buttons button {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #buttons button:hover{
+    text-decoration: underline;
+    color: #AD9218;
+  }
+  /*-------------------------------------------------------------Fin de la cabezera-----------------------------------------------------------------------------*/
+  #banner {
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    margin: auto; /* Añade esta línea para centrar horizontalmente */
+  }
+  
+  .slider {
+    width: 65%; /* Ajusta el ancho del carrusel según tus necesidades */
+    height: auto;
+    margin: 0 auto; /* Añade esta línea para centrar horizontalmente */
+    
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 86%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    background-color: #AD9218; /* Dorado */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  /*----------------------------------------------------Mission-vision-------------------------------------------------------------------------*/
+  
+  #mission-vision {
+    padding: 15px; /* Ajusta según sea necesario */
+    text-align:justify;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  #mission-vision h2 {
+    margin-bottom: 20px;
+    
+    color: #AD9218; /* Color de texto blanco para contrastar con el fondo */
+    
+  }
+  
+  #mission-vision p {
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight:lighter;
+  }
+  
+  #mission-vision img {
+    width: 30%; /* Ajusta según sea necesario */
+    height: auto;
+    margin-top: 20px; /* Espacio entre el texto y la imagen */
+    
+  }
+  .divider {
+    border-top: 1px solid #000; /* Línea negra de 1 píxel de grosor */
+    margin-top: 10px; /* Espaciado entre la imagen y la línea */
+  }
+  
+  /*------------------------------------------------DVS UCE --------------------------------------------------------------------------------------*/
+  #dvs-uce {
+    padding: 20px;
+  }
+  
+  #dvs-uce h2 {
+    text-align: center;
+    font-size: 2.5em; 
+  }
+  
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 280px;
+    margin-right: 280px;
+  }
+  
+  /* Nueva clase para el segundo grupo de imágenes */
+  .second-row {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .second-row .center-image {
+    margin: 0;
+  }
+  
+  .image-container {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: border 0.4s; /* Transición para el borde */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.8s;
+  }
+  
+  .image-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.849); /* Sombreado al pasar el mouse */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  .center-image {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .center-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.8s;
+  }
+  
+  .center-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-caption {
+    background-color: #084771;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    transition: text-decoration 0.3s, background-color 0.3s;
+  }
+  
+  /* Aplicar estilo al enlace */
+  .image-container a:hover .image-caption,
+  .center-image a:hover .image-caption {
+    text-decoration: underline;
+    background-color: #3F90CE;
+  }
+
+/* Estilos para el contenido principal (añade más estilos según sea necesario) */
+main {
+    padding: 20px;
+  }
+  
+  /* Estilos para los enlaces en el contenido principal */
+  main a {
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  /*----------------------------------------------------------------------------*/
+  .footer {
+    background-color:rgb(8, 71, 113);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .columna {
+    flex: 1;
+    max-width: 300px;
+    padding: 0 10px;
+  }
+  
+  .columna img {
+    width: 170px;
+    height: 170px;
+    margin-right: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00c3ff;
+  }
+  
+  .columna ul li {
+    margin-bottom: 10px; /* Espaciado de 10px entre elementos de la lista */
+  }
+  ul {
+    list-style: none;
+    
+    padding: 0;
+  }
+  
+  .social a {
+    color: #fff;
+    margin-right: 10px;
+    
+  }
+  
+  
