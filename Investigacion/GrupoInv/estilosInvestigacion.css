@@ -1,0 +1,747 @@
+body {
+    height: 145vh;
+    position: relative;
+   /* background: linear-gradient(45deg,#C02126,#3F90CE,#009036);*/
+    background-size: 100% 600%;
+    /*background: linear-gradient(45deg,#b4be2d,#4299c2,#3a8138);*/
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans MT';
+    color: #000000;
+    animation: cambiar 16s ease infinite;
+    color: aliceblue;
+  }
+  #Header {
+    background-color: rgb(8, 71, 113);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  .navigation {
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: -60px;
+
+  }
+
+  .navigation2 {
+    display: flex;
+    margin-bottom: 60px;
+    margin-right: -1840px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: block;
+    padding: 10px;
+  }
+  
+  .navigation a:hover {
+    color: #AD9218;
+    text-decoration: underline;
+  }
+  
+  .navigation ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .navigation ul li:hover > ul {
+    display: inherit;
+  }
+  
+  .navigation ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+  
+  .navigation2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navigation2 li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navigation2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: block;
+    padding: 10px;
+  }
+  
+  .navigation2 a:hover {
+
+    color: #AD9218;
+    text-decoration: underline;
+  }
+  
+  .navigation2 ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .navigation2 ul li:hover > ul {
+    display: inherit;
+  }
+  
+  .navigation2 ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(210, 217, 226);
+  }
+  
+  .fotoUce {
+    width: auto;
+    height: 420px;
+    background-color: yellowgreen;
+    overflow: hidden; /* Para ocultar el exceso de imagen si es necesario */
+  }
+  .infoUCE {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    background-image: url(/Inicio/Imagenes/siete.jpg); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Color del texto, puedes ajustarlo según tu diseño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centrado{
+    text-align: center;
+  }
+  .centrado .frase{
+    margin: 0 60px; /* Ajusta el valor según sea necesario */
+  }
+  
+  .seccion-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de tamaño igual */
+    gap: 20px; /* Espaciado entre las imágenes (ajusta según sea necesario) */
+    
+    width: auto;  /* AJUSTO EL TAMANIO EN VERTICAL DE MI S4ECCION, EN ESTE CASO SE AJUSTA A LA IMG */
+    background-color: #13120c;
+  
+  }
+  
+  .seccion-imagenes h1{
+   
+    text-align: center;
+    padding: 50% 0;
+  }
+  
+  .seccion-imagenes .N{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/n1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #333;
+    padding: 50px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    color:rgb(249, 250, 250);
+  }
+  
+  .seccion-imagenes .G{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/g1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #333;
+    padding: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: border-color 0.3s ease-in-out;
+    color:rgb(249, 250, 250);
+  }
+  
+  
+  .seccion-imagenes .P{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/p1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    color: rgb(248, 243, 243);
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    color:rgb(249, 250, 250);
+  }
+  
+  .seccion-imagenes .N:hover{
+    background-image: url(Imagenes/n1.jpg);
+    border-color: #ff9900;
+    color: black;
+  }
+  
+  .seccion-imagenes .G:hover{
+    background-image: url(Imagenes/g1.jpg);
+    border-color: #ff9900;
+    color: black;
+  }
+  .seccion-imagenes .P:hover{
+    background-image: url(Imagenes/p1.jpg);
+    border-color: #ff9900;
+    color: black;
+  }
+  
+  /* ------------------------ */
+  .seccion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-content: center;
+     /*align-items: center;*/
+    height: 400;
+    background-color: #3b2121;
+  }
+  
+  .seccion-grid img{
+    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño natural */
+    border-radius: 2px; /* Borde redondeado opcional */
+  }
+  .boton {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .boton img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor del botón */
+    height: auto;
+    border-radius: 8px; /* Opcional: agrega bordes redondeados a las imágenes */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .interes{
+    
+    height: 500px;
+    background-color: #f0eeeb;
+    margin-bottom: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .columna {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .columna p{
+    color: rgb(2, 2, 2);
+  }
+  
+  
+  
+  .columna img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+  .footer {
+    background-color:rgb(8, 71, 113);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .columna {
+    flex: 1;
+    max-width: 300px;
+    padding: 0 10px;
+  }
+  
+  .columna img {
+    width: 170px;
+    height: 170px;
+    margin-right: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00c3ff;
+  }
+  
+  .columna ul li {
+    margin-bottom: 10px; /* Espaciado de 10px entre elementos de la lista */
+  }
+  ul {
+    list-style: none;
+    
+    padding: 0;
+  }
+  
+  .social a {
+    color: #fff;
+    margin-right: 10px;
+    
+  }
+  /*************************************************************************************************************************
+  ********************************************************************************
+  **********************************************************************/
+  
+  #miPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 540px;
+    width: 980px; 
+    background-color: white; 
+    border: 2px solid #ccc;
+    padding: 20px;
+    z-index: 1;
+    overflow: auto;
+}
+
+#miPopup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+  #test:target {
+    display: block;
+    position: fixed;
+    height: 540px;
+    width: 980px;
+ }
+
+  #miPanel {
+    position: fixed;
+    height: 540px;
+    width: 980px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid rgb(8, 71, 113);
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+  }
+
+  #miPanel2 {
+    position: fixed;
+    height: 540px;
+    width: 980px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid rgb(8, 71, 113);
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+  }
+
+  #miPanel3 {
+    position: fixed;
+    height: 540px;
+    width: 980px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    top: 90%;
+    left: 23%;
+    border: 2px solid rgb(8, 71, 113);
+  }
+   
+  .logo:hover {
+    text-decoration: none;
+    /*color: white;*/
+    display: flex;
+    align-items: center;
+    color: #AD9218;
+    text-decoration: underline;
+  }
+  .fullscreenImage {
+    margin-top: 100px;
+  }
+  .textoInfo{
+    margin: 50px 300px; 
+    font-family: 'Gill Sans MT';
+    color: #000000;
+    font-size: 18px; 
+  }
+
+  .textosCentradosT{
+    margin: 50px 300px; 
+    font-family: 'Gill Sans MT';
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+
+  }
+
+  .textosCentrados{
+    margin: 50px 300px; 
+    font-family: 'Gill Sans MT';
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+
+  }
+
+  .cuadroTitulos {
+    position: absolute;
+    background-color: rgb(8, 71, 113); /* Color de fondo azul */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno de 20 píxeles */
+    font-weight: bold;
+    width: 700px; /* Ancho del cuadro de texto */
+    height: 150px; /* Altura del cuadro de texto */
+    margin: 10px auto; 
+    font-size: 40px;
+    margin-top: -40px;
+    right: 0;
+    top: 490px;
+  }
+
+  .columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de tamaño igual */
+    gap: 20px; /* Espaciado entre las imágenes (ajusta según sea necesario) */
+    
+    width: auto;  /* AJUSTO EL TAMANIO EN VERTICAL DE MI S4ECCION, EN ESTE CASO SE AJUSTA A LA IMG */
+    background-color: rgb(8, 71, 113);
+  
+  }
+
+  .columnas h1{
+   
+    text-align: left;
+    font-size: 30px;
+    margin-top:400px;
+
+  }
+
+  .columnas p{
+    text-align: justify;
+    font-size: 22px;
+    margin: 50px 60px; 
+    font-family: 'Gill Sans MT';
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    
+  }
+
+  .columnas h2{
+   
+    text-align: left;
+    font-size: 30px;
+
+  }
+  
+  .columnas .N{
+    background-image: linear-gradient(rgba(8, 71, 113, 0.25), rgba(8, 71, 113, 0.25)), url(/Investigacion/Imagenes/DireccionDoctorados/DD1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #333;
+    padding: 75px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    color:rgb(249, 250, 250);
+    
+  }
+  
+  .columnas .G{
+    background-image: linear-gradient(rgba(8, 71, 113, 0.25), rgba(8, 71, 113, 0.25)), url(/Investigacion/Imagenes/DireccionDoctorados/DD2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #333;
+    padding: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: border-color 0.3s ease-in-out;
+    color:rgb(249, 250, 250);
+  }
+  
+  
+  .columnas .P{
+    background-image: linear-gradient(rgba(8, 71, 113, 0.25), rgba(8, 71, 113, 0.25)), url(/Investigacion/Imagenes/DireccionDoctorados/DD3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    color: rgb(248, 243, 243);
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    color:rgb(249, 250, 250);
+  }
+  
+  .columnas .N:hover{
+    background-image: linear-gradient(rgba(8, 71, 113, .25), rgba(8, 71, 113, 0.75)),url(/Investigacion/Imagenes/DireccionDoctorados/DD1.png);
+    border-color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: underline;
+  }
+  
+  .columnas .G:hover{
+    background-image:linear-gradient(rgba(8, 71, 113, 0.75), rgba(8, 71, 113, 0.25)), url(/Investigacion/Imagenes/DireccionDoctorados/DD2.png);
+    border-color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: underline;
+  }
+  .columnas .P:hover{
+    background-image:linear-gradient(rgba(8, 71, 113, 0.25), rgba(8, 71, 113, 0.75)), url(/Investigacion/Imagenes/DireccionDoctorados/DD3.png);
+    border-color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  .imagenContenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .imagenContenedor img {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imagenContenedor .texto {
+    text-align: center;
+    font-family: 'Gill Sans MT';
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 5px;
+    width: 180px; /* Ancho del cuadro de texto */
+    height: 100px; /* Altura del cuadro de texto */
+    margin: 10px auto; 
+  }
+
+  .imagenContenedor .texto2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans MT';
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: rgb(8, 71, 113);
+    color: white; /* Color de texto blanco */
+    font-weight: bold;
+    width: 280px; /* Ancho del cuadro de texto */
+    height: 100px; /* Altura del cuadro de texto */
+    margin: 10px auto; /* Margen arriba y abajo del cuadro de texto, y centrado horizontalmente */
+    padding: 20px; /* Espacio alrededor del texto dentro del cuadro */
+    box-sizing: border-box;
+    transform: translate(0, -35%);
+  }
+
+  .imagenContenedor .texto:hover {
+    color: #AD9218;
+    text-decoration: underline;
+  }
+
+  .imagenContenedor .texto2:hover {
+    color: #AD9218;
+    text-decoration: underline;
+  }
+
+  .espacio{
+    margin: 20px;
+  }
+
+  .espacio2{
+    margin: 200px;
+  }
+
+/**************************************************************************************
+**************************************************************************************
+**********************************************************/
+.banner {
+  background-image: url('/InicioUCE/vinculacion/queEs.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Alinea el contenido en la parte inferior del banner */
+  align-items: center;
+  position: relative;
+}
+
+.title-box {
+  background-color: rgb(8, 71, 113);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 200px; /* Ajusta según sea necesario para el espaciado entre el título y la barra de navegación */
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 3.5em;
+  color: #fff;
+}
+  
+/*-----------------------------------------------------------Coordinadores-------------------------------------------------------*/
+#coordinadores {
+  background-color: #808183;
+  padding: 20px;
+  text-align: center;
+}
+
+#coordinadores h2 {
+  color: #fff; /* Color del texto en blanco para mayor contraste */
+  font-size: 2.5em;
+}
+
+.coordinador {
+  display: inline-block; /* Para que estén en línea y se ajusten a dos columnas */
+  width: 45%; /* Ajusta el ancho para que haya dos columnas con espacio entre ellas */
+  margin: 1%; /* Agrega un pequeño margen entre los coordinadores */
+  background-color: #fff; /* Fondo blanco para cada coordinador */
+  border-radius: 10px; /* Esquinas redondeadas */
+  overflow: hidden; /* Asegura que el fondo color #808183 no se aplique a cada coordinador */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+}
+
+.imagen-marco {
+  border-radius: 50%; /* Marco redondo para la imagen */
+  overflow: hidden;
+  margin: 10px auto; /* Espaciado entre la imagen y la información del coordinador */
+  width: 100px; /* Ajusta el tamaño del marco redondo según tus preferencias */
+  height: 100px; /* Ajusta el tamaño del marco redondo según tus preferencias */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-marco img {
+  width: 100px; /* Ajusta el ancho de la imagen al 100% del marco redondo */
+  height: auto; /* Ajusta la altura de la imagen automáticamente */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+  border: 5px solid #808183; /* Bordes del marco redondo */
+}
+
+
+.info-coordinador {
+  padding: 10px;
+}
+
+.info-coordinador p {
+  color: #808183; /* Color del texto en #808183 para mayor contraste */
+}
+
+.info-coordinador a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #3F90CE; /* Color de fondo del enlace */
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+  
+  
+  
+  
+  
+  
