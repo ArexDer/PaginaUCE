@@ -145,6 +145,8 @@
     display: none;
   }
 
+
+
   .popup h1 {
    text-align: center;
    
@@ -244,7 +246,7 @@
 .menuS {
   width: 50%;
   height: 58%;
-  background-color: #2e1212;
+  background-color: #AD9218;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -259,10 +261,38 @@
   color: rgb(8, 8, 8);
   transition: 0.5s;
 }
+.popupD {
+  display: none;
+  position: fixed;
+  height: 540px;
+  width: 980px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow-y: auto; /* Agregado para desplazamiento vertical */
+  overflow-x: hidden; /* Opcional: si también necesitas desplazamiento horizontal */
+}
+
+.popupD p{
+  text-align: justify;
+}
+
+.cerrar2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #db1414;
+}
 
 
 
-   
+ 
     /* ---------------------------------------------------------- */
     .footer {
       background-color:rgb(8, 71, 113);

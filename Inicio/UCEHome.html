@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    
     <title>Prototipo UCE</title>
 
     <script>
@@ -106,8 +107,8 @@
           <li>
             <a href="#">Transparencia </a>
             <ul>
-              <li><a href="#">Información Pública</a></li>
-              <li><a href="#">Informes de Gestión</a></li>
+              <li><a href="/Inicio/Transparencia/TransparenciaInfo.html">Información Pública</a></li>
+              <li><a href="/Inicio/Transparencia/TransparenciaGestion.html">Informes de Gestión</a></li>
             </ul>
           </li>
 
@@ -195,6 +196,35 @@
       setInterval(showNextImage, 3000);
     </script>
 
+
+
+    <!-- Botón flotante -->
+    <button id="audioButton" onclick="toggleAudio()">
+      <img id="audioImage" src="Play.png" alt="Play"  width="80" height="70">
+  </button>
+
+  <!-- Archivo de audio -->
+  <audio id="audioPlayer" src="https://radio.cedia.org.ec/uce-radio"></audio>
+
+  <script>
+      var audioPlayer = document.getElementById('audioPlayer');
+      var audioImage = document.getElementById('audioImage');
+
+      function toggleAudio() {
+          if (audioPlayer.paused) {
+              // Reproducir audio
+              audioPlayer.play();
+              // Cambiar imagen a pausa
+              audioImage.src = "Stop.png";
+          } else {
+              // Pausar audio
+              audioPlayer.pause();
+              // Cambiar imagen a reproducir
+              audioImage.src = "Play.png";
+          }
+      }
+  </script>
+<!-- //////////////////////////////////// //////////////-->
     <footer class="footer">
       <div class="container">
         <div class="columna">
@@ -224,5 +254,8 @@
         </div>
       </div>
     </footer>
+
+
+
   </body>
 </html>

@@ -199,11 +199,10 @@ body {
   cursor: pointer;
 }
 
-.mostrarPopupServicios {
-  h1, a {
+.enlace, direccion {
     display: inline-block;
   }
-}
+
 
 
 

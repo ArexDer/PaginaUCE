@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TransparenciaInfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css ">
+    <title>Plantilla Carrera</title>
+    <style>
+      .infoCarreraOfertada {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajusta la altura según sea necesario */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/Inicio/Transparencia/TransparenciaPubli.jpg); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen */
+  color: white; /* Color del texto, puedes ajustarlo según tu diseño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    </style>
+</head>
+<body>
+
+
+    <!--EL HEADER VA EN TODAS LAS VISTAS, NO SE LO MODIFICA-->
+    <header id="Header">
+        <a href="/Inicio/UCEHome.html" class="logo">
+          <img
+            alt="Una imagen del logo de la Universaidad Central"
+            src="/Inicio/Imagenes/logo.png"
+          />
+          <h2 class="Universidad Central del Ecuador">
+            Universidad Central del Ecuador
+          </h2>
+        </a>
+  
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#">Oferta Académica</a>
+              <ul>
+                <li><a href="#">Nivelación</a></li>
+                <li><a href="#">Grado </a></li>
+                <li><a href="#">Posgrado </a></li>
+                <li><a href="#">Idiomas</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Investigación </a>
+              <ul>
+                <li><a href="#">Dirección de Investigación</a></li>
+                <li><a href="#">Dirección de Doctorados </a></li>
+                <li><a href="#">Centro de Ciencasi Básicas </a></li>
+                <li><a href="#">Institutos de Investigación</a></li>
+                <li><a href="#">Sistema Integrado de Bibliotecas</a></li>
+                <li><a href="#">Investigadores</a></li>
+                <li><a href="#">Unidad de Gestión de Doctorados</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Vinculación </a>
+              <ul>
+                
+                <li><a href="#">Vinculación con la Sociedad</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Transparencia </a>
+              <ul>
+                <li><a href="#">Información Pública</a></li>
+                <li><a href="/Inicio/Transparencia/TransparenciaGestion.html">Informes de Gestión</a></li>
+              </ul>
+
+            </li>
+
+            <li><a href="#">Servicios </a>
+              <ul>
+                <li><a href="#">Consultorios Juridicos</a></li>
+                <li><a href="#">Odontológia</a></li>
+                <li><a href="#">Hospital del Día</a></li>
+                <li><a href="#">Laboratorio Clínico </a></li>
+                <li><a href="#">Museo Universitario</a></li>
+                <li><a href="#">Sistema Integrado de Bibliotecas</a></li>
+                <li><a href="#">UCE Cifras</a></li>
+                
+              </ul>
+            </li>
+
+            <li><a href="https://siiu.uce.edu.ec/">SIIU </a>
+            
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <section class="infoCarreraOfertada">
+        <h1>LEY ORGÁNICA DE TRANSPARENCIA E INFORMACIÓN PÚBLICA</h1>
+      </section>
+      <section class="informacionLey">
+        <h2>Es la participación ciudadana y el derecho de acceso a la información pública, para ejercer un efectivo control y exigir la rendición de cuentas a las instituciones gubernamentales o aquellas que perciben recursos del estado.</h2>
+      </section>
+
+      <hr/>
+<!-- Sección con la lista de botones -->
+<h3 class="separador">TRANSPARENCIA</h3>
+
+<div class="button-container">
+    <button onclick="mostrarVentanaEmergente('ventana1', 'Transparencia 2023')">Transparencia 2023</button>
+    <button onclick="mostrarVentanaEmergente('ventana2', 'Transparencia 2022')">Transparencia 2022</button>
+    <button onclick="mostrarVentanaEmergente('ventana3', 'Transparencia 2021')">Transparencia 2021</button>
+    <button onclick="mostrarVentanaEmergente('ventana4', 'Transparencia 2020')">Transparencia 2020</button>
+  </div>
+  
+  <!-- Ventanas emergentes ocultas inicialmente -->
+  <div id="ventana1" class="popup"></div>
+  <div id="ventana2" class="popup"></div>
+  <div id="ventana3" class="popup"></div>
+  <div id="ventana4" class="popup"></div>
+  
+  <script>
+    function mostrarVentanaEmergente(ventanaId, contenido) {
+      // Obtener la referencia de la ventana emergente
+      var ventanaEmergente = document.getElementById(ventanaId);
+  
+      // Mostrar la ventana emergente
+      ventanaEmergente.style.display = 'block';
+  
+      // Agregar contenido a la ventana emergente (puedes personalizar esta parte según tus necesidades)
+      ventanaEmergente.innerHTML = `
+        <button class="close-button" onclick="cerrarVentanaEmergente('${ventanaId}')">Cerrar</button>
+        <p>${contenido}</p>
+
+        <ul class="month-list">
+          ${generarListaMeses()}
+        </ul>
+        <a href="#">
+         
+        </a>
+      `;
+    }
+  
+    function cerrarVentanaEmergente(ventanaId) {
+      // Ocultar la ventana emergente al hacer clic en el botón "Cerrar"
+      document.getElementById(ventanaId).style.display = 'none';
+    }
+  
+    function generarListaMeses() {
+      const meses = [
+        'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
+        'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+      ];
+  
+      return meses.map(mes => `
+        <li class="month-list-item">
+          <a href="#">${mes}</a>
+          <a href="#">Enlace 1</a>
+          <a href="#">Enlace 2</a>
+          <a href="#">Enlace 3</a>
+          <a href="#">Enlace 4</a>
+          <a href="#">Enlace 5</a>
+          <a href="#">Enlace 6</a>
+          <a href="#">Enlace 7</a>
+        </li>
+      `).join('');
+    }
+  </script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr/>
+<h3 class="separador">BASE LEGAL</h3>
+<!-- Lista con botones -->
+<ul class="button-list">
+    <li><button onclick="mostrarPopupBase()">Base Legal Interna</button></li>
+    <li><button onclick="mostrarPopupNormativa()">Normativa</button></li>
+  </ul>
+  
+  <!-- Popup oculto inicialmente -->
+  <div id="popup" class="popup"></div>
+  
+  <script>
+    function mostrarPopupBase() {
+      // Obtener la referencia del popup
+      var popup = document.getElementById('popup');
+  
+      // Mostrar el popup
+      popup.style.display = 'block';
+  
+      // Agregar contenido al popup
+      popup.innerHTML = `
+        <button class="close-button" onclick="cerrarPopup()">X</button>
+
+        <br/>
+        <div class="contentwrap"> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/CODIGO DE ETICA DE LA UNIVERSIDAD CENTRAL DEL ECUADOR.pdf">CODIGO DE ETICA DE LA UNIVERSIDAD CENTRAL DEL ECUADOR</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/DECIMO QUINTO CONTRATO COLECTIVO UCE.pdf">DECIMO QUINTO CONTRATO COLECTIVO UCE</a></p> <p><a href="https://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ESTATUTO_UCE_DEFINITIVO.pdf">ESTATUTO UNIVERSITARIO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO DE CONCESION DE RESPALDO ACADEMICO_compressed.pdf">INSTRUCTIVO DE CONCESION DE RESPALDO ACADEMICO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO DE EDUCACION CONTINUA_compressed.pdf">INSTRUCTIVO DE EDUCACION CONTINUA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO GENERAL DE TITULACION DE GRADO_compressed.pdf">INSTRUCTIVO GENERAL DE TITULACION DE GRADO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/InstructivoConcursoMeritosOposicionIngresoCarreraDocente.pdf">INSTRUCTIVO PARA CONCURSOS DE MERITOS Y OPOSICION PARA EL INGRESO A LA CARRERA DOCENTE</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA EL USO DE LOCKERS-CASILLEROS PARA EL SISTEMA INTEGRADO DE BIBLIOTECAS_compressed.pdf">INSTRUCTIVO PARA EL USO DE LOCKERS-CASILLEROS PARA EL SISTEMA INTEGRADO DE BIBLIOTECAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/InstructivoAplicacionCargaHorariaDocente.pdf">INSTRUCTIVO PARA LA APLICACION DE CARGA HORARIA DOCENTE</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO DE CARGA HORARIA FINAL Y CORREGIDO-1.pdf">INSTRUCTIVO PARA LA APLICACION DE CARGA HORARIA DOCENTE PERIODO 2020-2020</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO DE CARGA HORARIA CONTINGENCIA PERÍODO ACADÉMICO 2020-2021.pdf">INSTRUCTIVO PARA LA APLICACION DE CARGA HORARIA DOCENTE PERIODO 2020-2021</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA LA CONCESION DE TERCERAS MATRICULAS_compressed.pdf">INSTRUCTIVO PARA LA CONCECISION DE TERCERAS MATRICULAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO GENERAL DE TITULACION DE GRADO_compressed.pdf">INSTRUCTIVO PARA LA EVALUACION ESTUDIANTIL DE GRADO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA LA EXPEDICIÃN, REEXPEDICION Y REGISTRO DE TITULOS_compressed.pdf">INSTRUCTIVO PARA LA EXPEDICION, REEXPEDICION Y REGISTRO DE TITULOS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA LA HOMOLOGACION DEL TITULO DE HECHO PARA LOS ESPECIALISTAS MEDICOS DE DERECHO O DE HECHO QUE REQUIEREN REGISTRAR UNA SEGUNDA ESPECIALIDAD MEDICA EN LA FACULTAD DE CIENCIAS MÃDICAS_compres.pdf">INSTRUCTIVO PARA LA HOMOLOGACION DEL TITULO DE HECHO PARA LOS ESPECIALISTAS MEDICOS DE DERECHO O DE HECHO QUE REQUIEREN REGISTRAR UNA SEGUNDA ESPECIALIDAD MEDICA EN LA FACULTAD DE CIENCIAS MEDICAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA LA HOMOLOGACION DEL TITULO DE HECHO PRIMERA ESPECIALIDAD MEDICA_compressed (1).pdf">INSTRUCTIVO PARA LA HOMOLOGACION DEL TITULO DE HECHO PRIMERA ESPECIALIDAD MEDICA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA LA RECATEGORIZACION DEL PERSONAL ACADÃMICO TITULAR DE LA UCE 2017-2018_compressed.pdf">INSTRUCTIVO PARA LA RECATEGORIZACION DEL PERSONAL ACADEMICO TITULAR DE LA UCE 2017 2018</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA MANEJO DE FONDOS A RENDIR CUENTAS_compressed.pdf">INSTRUCTIVO PARA MENEJO DE FONDOS A RENDIR CUENTAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/LINEAMIENTOS PARA LA APROBACION Y EJECUCION DE PROYECTOS DE VINCULACION CON LA SOCIEDAD_compressed.pdf">LINEAMIENTOS PARA LA APROBACION Y EJECUCION DE PROYECTOS DE VINCULACION CON LA SOCIEDAD</a></p> <p>LINEAMIENTOS EXAMEN COMPLEXIVO PROCESO DE TITULACION 2019-2020 Y 2020 2020</p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/LINEAS DE INVESTIGACIÃN POR ÃREA DEL CONOCIMIENTO_compressed (1).pdf">LINEAS DE INVESTIGACION POR AREA DEL CONCIMIENTO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/PlanEstrategicoDesarrolloInstitucionalPEDI.pdf">PLAN ESTRATEGICO DE DESARROLLO INSTITUCIONAL</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/POLITICAS DE CORREO ELECTRONICO_compressed.pdf">POLITICAS DE CORREO ELECTRONICO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/POLÃTICAS DE INVESTIGACIÃN_compressed.pdf">POLITICAS DE INVESTIGACION</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/PROTOCOLO GENERAL PARA LA PREVENCION, ATENCION Y SANCION DE LOS CASOS DE VIOLENCIA SEXUAL Y DE GENERO_compressed.pdf">PROTOCOLO GENERAL PARA LA PREVENCION, ATENCION, Y SANCION DE LOS CASOS DE VIOLENCIA SEXUAL Y DE GENERO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ReglamentoAdquisicionProvisionBienesMueblesSuministrosOficinaMaterialesAseoUCE.pdf">REGLAMENTO DE ADQUISICIONES Y PROVISION DE BIENES MUEBLES, SUMINISTROS DE OFICINA Y MATERIALES DE ASEO PARA LAS UNIDADES DE ADMINISTRACION CENTRAL Y CENTROS DE COORDINACION ACADEMICA DE LA UCE</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE BECAS PARA ESTUDIANTES DE TERCER NIVEL.pdf">REGLAMENTO DE BECAS PARA ESTUDIANTES DE TERCER NIVEL</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE CONDECORACIONES.pdf">REGLAMENTO DE CONDECORACIONES</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE ELECCIONES.pdf">REGLAMENTO DE ELECCIONES</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE EVALUACION INTEGRAL DEL DESEMPEÃO DOCENTE.pdf">REGLAMENTO DE EVALUACION INTEGRAL DEL DESEMPEÑO DOCENTE</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ReglamentoFuncionamientoCarrerasCienciasPolicialesSeguridadCiudadanaFaculJurisprudencia.pdf">REGLAMENTO DE FUNCIONAMIENTO DE LAS CARRERAS DE CIENCIAS POLICIALES Y SEGURIDAD CIUDADANA DE LA FACULTAD DE JURISPRUDENCIA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE FUNCIONAMIENTO DE LAS COMISIONES PERMANENTES Y ESPECIALES.pdf">REGLAMENTO DE FUNCIONAMIENTO DE LAS COMISIONES PERMANENTES Y ESPECIALES</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ReglamentoFuncionamientoConsejosDirectivosCarreraPosgradoUCE.pdf">REGLAMENTO DE FUNCIONAMIENTO DE LOS CONSEJOS DIRECTIVOS, CONSEJOS DE CARRERA Y CONSEJOS DE POSGRADO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE PRACTICAS ESTUDIANTILES.pdf">REGLAMENTO DE PRACTICAS ESTUDIANTILES</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE PUBLICACIONES E IMPRESIONES EN LA EDITORIAL UNIVERSITARIA.pdf">REGLAMENTO DE PUBLICACIONES E IMPRESIONES EN LA EDITORIAL UNIVERSITARIA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE REGIMEN DISCIPLINARIO UCE.pdf">REGLAMENTO DE REGIMEN DISCIPLINARIO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DE SESIONES DEL HONORABLE CONSEJO UNIVERSITARIO.pdf">REGLAMENTO DE SESIONES DEL HONORABLE CONSEJO UNIVERSITARIO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DEL COMITE DE ETICA DE LA UNIVERSIDAD CENTRAL DEL ECUADOR.pdf">REGLAMENTO DEL COMITE DE ETICA DE LA UNIVERSIDAD CENTRAL DEL ECUADOR</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DEL COMITÃ DE ÃTICA APROBADO.pdf">REGLAMENTO DEL COMITE DE ETICA DE LA UNIVERSIDAD CENTRAL DEL ECUADOR R2020</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DEL INSTITUTO ACADEMICO DE IDIOMAS.pdf">REGLAMENTO DEL INSTITUTO ACADEMICO DE IDIOMAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO DEL INSTITUTO DE CIENCIAS BASICAS.pdf">REGLAMENTO DEL INSTITUTO DE CIENCIAS BASICAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ReglamentoSubcomiteEticaInvestigacionEnSeresHumanos.pdf">REGLAMENTO DEL SUBCOMITE DE ETICA DE INVESTIGACION EN SERES HUMANOS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO GENERAL DE POSGRADOS REDUC.pdf">REGLAMENTO GENERAL DE POSGRADOS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO GENERAL DE SEGUMIENTO DE GRADUADOS DE PRE Y POSGRADO.pdf">REGLAMENTO GENERAL DE SEGUIMIENTO DE GRADUADOS DE PRE Y POSGRADO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO GENERAL DE VIATICOS.pdf">REGLAMENTO GENERAL DE VIATICOS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ReglamentoGeneralSustitutivoSistemaRedBibliotecas.pdf">REGLAMENTO GENERAL SUSTITUTIVO DEL SISTEMA DE RED DE BIBLIOTECAS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO INTERNO DE SANCIONES POR CONSUMO DE BEBIDAS ALCOHOLICAS Y OTRAS DROGAS EN EL CAMPUS DE LA UNIVERSIDAD.pdf">REGLAMENTO INTERNO DE SANCIONES POR CONSUMO DE BEBIDAS ALCOHOLICAS Y OTRAS DROGAS EN EL CAMPUS DE LA UNIVERSIDAD</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO INTERNO PARA EL FUNCIONAMIENTO DE LOS CONSULTORIOS JURIDICOS GRATUITOS.pdf">REGLAMENTO INTERNO PARA EL FUNCIONAMIENTO DE LOS CONSULTORIOS JURIDICOS GRATUITOS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO GENERAL DE VIATICOS.pdfREGLAMENTO PARA EL EJERCICIO DEL AÃO SABATICO.pdf">REGLAMENTO PARA EL EJERCICIO DEL AÑO SABATICO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO PARA EL FUNCIONAMIENTO DE LA COMISION ESPECIAL DE ASUNTOS DISCIPLINARIOS.pdf">REGLAMENTO PARA EL FUNCIONAMIENTO DE LA COMISION ESPECIAL DE ASUNTOS DISCIPLINARIOS</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/ReglamentoAplicaiconCertificacionSuficienciaCulturaFisica.pdf">REGLAMENTO PARA LA APLICACION Y CERTIFICACION DE LA SUFICIENCIA EN CULTURA FISICA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO PARA LA AYUDANTIA DE CATEDRA DE DOCENCIA.pdf">REGLAMENTO PARA LA AYUDANTIA DE CATEDRA DE DOCENCIA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO PARA LA CONCESIÓN DEL PRIMIO UNIVERSIDAD CENTRAL DEL ECUADOR.pdf">REGLAMENTO PARA LA CONCESION DEL PREMIO UNIVERSIDAD CENTRAL DEL ECUADOR R 2020</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/REGLAMENTO PARA LA UTILIZACION DEL TEATRO UNIVERSITARIO.pdf">REGLAMENTO PARA LA UTILIZACION DEL TEATRO UNIVERSITARIO</a></p> <p></p> <p></p> <p></p> <p></p> </div>
+        <a href="http://repositorio.uce.edu.ec/archivos/rectorado/BASE LEGAL INTERNA/INSTRUCTIVO PARA EL USO DE LOCKERS-CASILLEROS PARA EL SISTEMA INTEGRADO DE BIBLIOTECAS_compressed.pdf">INSTRUCTIVO PARA EL USO DE LOCKERS-CASILLEROS PARA EL SISTEMA INTEGRADO DE BIBLIOTECAS</a>
+      
+        `;
+    }
+
+    function mostrarPopupNormativa(contenido) {
+      // Obtener la referencia del popup
+      var popup = document.getElementById('popup');
+  
+      // Mostrar el popup
+      popup.style.display = 'block';
+  
+      // Agregar contenido al popup
+      popup.innerHTML = `
+        <button class="close-button" onclick="cerrarPopup()">X</button>
+        <div class="contentwrap"> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/CODIGO DEL TRABAJO.pdf">CODIGO DEL TRABAJO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/CONSTITUCION.pdf">CONSTITUCION DEL ECUADOR</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/LEY ORGANICA DE EDUCACION SUPERIOR - LOES.pdf">LEY ORGANICA DE EDUCACION SUPERIOR LOES</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/LEY ORGANICA DE LA CONTRALORIA GENERAL DEL ESTADO.pdf">LEY ORGANICA DE LA CONTRALORIA GENERAL DEL ESTADO</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/LEY ORGANICA DE SERVICIO PUBLICO-LOSEP.pdf">LEY ORANICA DE SERVICIO PUBLICO LOSEP</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/LEY ORGANICA DE TRANSPARENCIA Y ACCESO A LA INFORMACION PUBLICA.pdf">LEY ORGANICA DE TRANSPARENCIA Y ACCESO A LA INFORMACION PUBLICA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/LEY ORGANICA DEL SISTEMA NACIONAL DE CONTRATACION PUBLICA.pdf">LEY ORGANICA DEL SISTEMA NACIONAL DE CONTRATACION PUBLICA</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/NORMATIVA EXTERNA/REGLAMENTO A LA LEY DE TRANSPARENCIA Y ACCESO A LA INFORMACION PUBLICA.pdf"></p> </div>
+      `;
+    }
+  
+    function cerrarPopup() {
+      // Ocultar el popup al hacer clic en el botón de cerrar
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr/>
+
+<h3 class="separador">AUTORIDADES GUBERNAMENTALES</h3>
+<ul class="button-list">
+    <li><button onclick="mostrarPopup2023()">Autoridades 2023</button></li>
+    <li><button onclick="mostrarPopup2022()">Autoridades 2022</button></li>
+    <li><button onclick="mostrarPopup2021()">Autoridades 2021</button></li>
+    <li><button onclick="mostrarPopup2020()">Autoridades 2020</button></li>
+  </ul>
+  
+  <!-- Popup oculto inicialmente -->
+  <div id="popup" class="popup"></div>
+  <script>
+    function mostrarPopup2023() {
+      // Obtener la referencia del popup
+      var popup = document.getElementById('popup');
+  
+      // Mostrar el popup
+      popup.style.display = 'block';
+  
+      // Agregar contenido al popup
+      popup.innerHTML = `
+        <button class="close-button" onclick="cerrarPopup()">X</button>
+        <br>
+        <div class="contentwrap"> <p><a href="https://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2023/INFORME_PARA_COMPROBAR_EL_CARACTER_NO_LUCRATIVO_DE_LA_IES_2020.pdf">23.1&nbsp; INFORME SOBRE EL EXAMEN FINANCIERO DETALLADO EN ACTIVOS, PASIVOS Y PATRIMONIO Y DEMÁS INFORMACIÓN CONTABLE Y FINANCIERA QUE CORRESPONDA (PARA COMPROBAR EL CARACTER NO LUCRATIVO DE LA IES) PARA EL AÑO TERMINADO AL 31 DE DICIEMBRE DE 2020</a></p> <p><a href="https://repositorio.uce.edu.ec/aplicacion/administracionArchivo/carpetas/listarDirectorio.jsf#no-back-button:~:text=https%3A//repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2023/INFORME_PARA_COMPROBAR_EL_CARACTER_NO_LUCRATIVO_DE_LA_IES_2021.pdf">23.2 INFORME SOBRE EL EXAMEN FINANCIERO DETALLADO EN ACTIVOS, PASIVOS Y PATRIMONIO Y DEMÁS INFORMACIÓN CONTABLE Y FINANCIERA QUE CORRESPONDA (PARA COMPROBAR EL CARACTER NO LUCRATIVO DE LA IES) PARA EL AÑO TERMINADO AL 31 DE DICIEMBRE DE 2021</a></p> </div>
+        <br/>
+        
+      
+        `;
+    }
+
+    function mostrarPopup2022(contenido) {
+      // Obtener la referencia del popup
+      var popup = document.getElementById('popup');
+  
+      // Mostrar el popup
+      popup.style.display = 'block';
+  
+      // Agregar contenido al popup
+      popup.innerHTML = `
+        <button class="close-button" onclick="cerrarPopup()">X</button>
+        <br>
+        <div class="contentwrap"> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2019/19.1.pdf" target="_blank" title="19.1 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR OBLIGACIONES PATRONALES...EMPRESA PUBLICA...CTT">19.1 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR OBLIGACIONES PATRONALES...EMPRESA PUBLICA...CTT</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2019/19.2.pdf">19.2 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR Y A LOS PROCESOS PRECONTRACTUAL CONTRACTUAL EJECUCION LIQUIDACION Y PAGO DE LAS ADQUISICIONES DE BIENES Y PRESTACION DE SERVICIOS DE LA FACULTAD DE COMUNICACION SOCIAL POR EL PERIODO COMPRENDIDO ENTRE EL 1 DE ENERO DE 2013 Y EL 31 DE DICIEMBRE DE 2017</a></p> </div>
+
+      `;
+    }
+
+    function mostrarPopup2021(contenido) {
+      // Obtener la referencia del popup
+      var popup = document.getElementById('popup');
+  
+      // Mostrar el popup
+      popup.style.display = 'block';
+  
+      // Agregar contenido al popup
+      popup.innerHTML = `
+        <button class="close-button" onclick="cerrarPopup()">X</button>
+        <br>
+        <div class="contentwrap"> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2019/19.1.pdf" target="_blank" title="19.1 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR OBLIGACIONES PATRONALES...EMPRESA PUBLICA...CTT">19.1 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR OBLIGACIONES PATRONALES...EMPRESA PUBLICA...CTT</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2019/19.2.pdf">19.2 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR Y A LOS PROCESOS PRECONTRACTUAL CONTRACTUAL EJECUCION LIQUIDACION Y PAGO DE LAS ADQUISICIONES DE BIENES Y PRESTACION DE SERVICIOS DE LA FACULTAD DE COMUNICACION SOCIAL POR EL PERIODO COMPRENDIDO ENTRE EL 1 DE ENERO DE 2013 Y EL 31 DE DICIEMBRE DE 2017</a></p> </div>
+
+      `;
+    }
+
+    function mostrarPopup2020(contenido) {
+      // Obtener la referencia del popup
+      var popup = document.getElementById('popup');
+  
+      // Mostrar el popup
+      popup.style.display = 'block';
+  
+      // Agregar contenido al popup
+      popup.innerHTML = `
+        <button class="close-button" onclick="cerrarPopup()">X</button>
+        <br>
+        <div class="contentwrap"> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2019/19.1.pdf" target="_blank" title="19.1 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR OBLIGACIONES PATRONALES...EMPRESA PUBLICA...CTT">19.1 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR OBLIGACIONES PATRONALES...EMPRESA PUBLICA...CTT</a></p> <p><a href="http://repositorio.uce.edu.ec/archivos/rectorado/AUDITORIAS/2019/19.2.pdf">19.2 EXAMEN ESPECIAL A LOS INGRESOS DE AUTOGESTION RECUPERACION DE CUENTAS POR COBRAR Y A LOS PROCESOS PRECONTRACTUAL CONTRACTUAL EJECUCION LIQUIDACION Y PAGO DE LAS ADQUISICIONES DE BIENES Y PRESTACION DE SERVICIOS DE LA FACULTAD DE COMUNICACION SOCIAL POR EL PERIODO COMPRENDIDO ENTRE EL 1 DE ENERO DE 2013 Y EL 31 DE DICIEMBRE DE 2017</a></p> </div>
+
+      `;
+    }
+  
+    function cerrarPopup() {
+      // Ocultar el popup al hacer clic en el botón de cerrar
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+<hr/>
+
+      <!-- FOOTER -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="columna">
+            <img src="/Inicio/Imagenes/UCEFooter.png" alt="Descripción de la imagen">
+          </div>
+          <div class="columna">
+            <h4>Contactos</h4>
+            <ul>
+              <li><strong>Ubicación:</strong> Av. Universitaria, Quito 170129 </li>
+              <li><strong>Teléfono:</strong>022528810</li>
+              <li><strong>Correo:</strong> uce.edu.ec</li>
+              <li><strong>Otros:</strong> QFXX+P2 Quito</li>
+            </ul>
+          </div>
+          <div class="columna">
+            <h4>Síguenos</h4>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
